@@ -6,7 +6,7 @@ spring:
   profiles: dev
   
 service:
-  layer: User Service (DEV) 
+  layer: User Service (DEV) - Reflash TEST
   
 ---
   
@@ -14,4 +14,4 @@ spring:
   profiles: prod
   
 service:
-  layer: User Service (PROD)
+  layer: User Service (PROD) - Reflash TEST
