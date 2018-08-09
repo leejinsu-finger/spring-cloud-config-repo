@@ -1,0 +1,17 @@
+message: Hello world!!!!
+
+---
+
+spring:
+  profiles: dev
+  
+service:
+  layer: DEVELOPMENT 
+  
+---
+  
+spring:
+  profiles: prod
+  
+service:
+  layer: PRODUCT
