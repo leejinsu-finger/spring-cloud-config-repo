@@ -24,4 +24,4 @@ spring:
     password: guest
   
 service:
-  layer: User Service (PROD) - Reflash TEST
+  layer: User Service (PROD) - Reflash BUS TEST
