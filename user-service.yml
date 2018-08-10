@@ -4,6 +4,11 @@ message: Hello world!!!!
 
 spring:
   profiles: dev
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   
 service:
   layer: User Service (DEV) - Reflash TEST
@@ -12,6 +17,11 @@ service:
   
 spring:
   profiles: prod
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   
 service:
   layer: User Service (PROD) - Reflash TEST
