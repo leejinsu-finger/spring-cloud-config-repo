@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: gateway
+
+zuul:
+  routes:
+    auth-service:
+        path: /user/**
+        url: http://localhost:8081
+        stripPrefix: false
+        sensitiveHeaders:
+
+    account-service:
+        path: /todo/**
+        url: http://localhost:8082
+        stripPrefix: false
+        sensitiveHeaders:
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/    
