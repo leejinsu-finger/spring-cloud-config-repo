@@ -1,3 +1,5 @@
+message: Hello TODO Service!!!!
+
 spring:
   rabbitmq:
     host: localhost
