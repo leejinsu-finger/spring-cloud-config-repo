@@ -4,13 +4,13 @@ spring:
 
 zuul:
   routes:
-    auth-service:
+    user-service:
         path: /user/**
         url: http://localhost:8081
         stripPrefix: false
         sensitiveHeaders:
 
-    account-service:
+    todo-service:
         path: /todo/**
         url: http://localhost:8082
         stripPrefix: false
