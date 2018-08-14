@@ -7,9 +7,17 @@ zuul:
       serviceId: todo-service
       path: /api/todo/**
 
-ribbon:
-  eureka:
-    enabled: false      
+#ribbon:
+#  eureka:
+#    enabled: false      
+
+#user-service:
+#  ribbon:
+#    listOfServers: http://localhost:8081,http://localhost:8091
+    
+#todo-service:
+#  ribbon:
+#    listOfServers: http://localhost:8082,http://localhost:8092,http://localhost:8102
 
 spring:
   rabbitmq:
