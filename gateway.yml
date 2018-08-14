@@ -3,12 +3,17 @@ zuul:
     user-service:
       serviceId: user-service  
       path: /user/**
-      url: http://localhost:8081
-
     todo-service:
       serviceId: todo-service
       path: /to/**
-      url: http://localhost:8082
+
+user-service:
+  ribbon:
+    listOfServers: http://localhost:8081,http://localhost:8091
+    
+todo-service:
+  ribbon:
+    listOfServers: http://localhost:8082,http://localhost:8092
 
 spring:
   rabbitmq:
