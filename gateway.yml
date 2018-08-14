@@ -2,7 +2,7 @@ zuul:
   routes:
     user-service:
       serviceId: user-service  
-      path: /uua/**
+      path: /user/**
       url: http://localhost:8081
 
     todo-service:
