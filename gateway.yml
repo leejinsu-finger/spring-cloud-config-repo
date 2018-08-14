@@ -7,7 +7,7 @@ zuul:
 
     todo-service:
       serviceId: todo-service
-      path: /TODO/**
+      path: /to/**
       url: http://localhost:8082
 
 spring:
