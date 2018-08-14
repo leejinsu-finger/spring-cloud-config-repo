@@ -10,6 +10,7 @@ zuul:
       url: http://localhost:8081
 
     todo-service:
+      serviceId: todo-service
       path: /todo/**
       url: http://localhost:8082
       stripPrefix: false
