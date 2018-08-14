@@ -7,9 +7,9 @@ zuul:
       serviceId: todo-service
       path: /api/todo/**
 
-#ribbon:
-#  eureka:
-#    enabled: false      
+ribbon:
+  eureka:
+    enabled: true
 
 #user-service:
 #  ribbon:
