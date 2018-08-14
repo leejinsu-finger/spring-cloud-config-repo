@@ -6,7 +6,7 @@ zuul:
   routes:
     user-service:
       serviceId: user-service  
-      path: /user/**
+      path: /uua/**
       url: http://localhost:8081      
       stripPrefix: false
       sensitiveHeaders:
