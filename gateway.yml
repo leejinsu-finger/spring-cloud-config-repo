@@ -13,7 +13,6 @@ zuul:
       serviceId: todo-service
       path: /todo/**
       url: http://localhost:8082
-      stripPrefix: false
 
 eureka:
   client:
