@@ -10,10 +10,10 @@ zuul:
       url: http://localhost:8081
 
     todo-service:
-        path: /todo/**
-        url: http://localhost:8082
-        stripPrefix: false
-        sensitiveHeaders:
+      path: /todo/**
+      url: http://localhost:8082
+      stripPrefix: false
+      sensitiveHeaders:
 
 eureka:
   client:
