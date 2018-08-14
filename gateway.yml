@@ -16,6 +16,14 @@ zuul:
       path: /todo/**
       url: http://localhost:8082
 
+spring:
+  profiles: dev
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest      
+
 eureka:
   client:
     serviceUrl:
