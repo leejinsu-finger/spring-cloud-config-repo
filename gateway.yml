@@ -3,9 +3,7 @@ zuul:
     user-service:
       serviceId: user-service  
       path: /uua/**
-      url: http://localhost:8081      
-      stripPrefix: false
-      sensitiveHeaders:
+      url: http://localhost:8081
 
     todo-service:
       serviceId: todo-service
