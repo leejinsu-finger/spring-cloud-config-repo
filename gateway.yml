@@ -4,7 +4,7 @@ spring:
 
 zuul:
   routes:
-    user-gateway:
+    user-service:
       serviceId: user-service  
       path: /user/**
       url: http://localhost:8081
