@@ -2,10 +2,10 @@ zuul:
   routes:
     user-service:
       serviceId: user-service  
-      path: /user/**
+      path: /api/user/**
     todo-service:
       serviceId: todo-service
-      path: /to/**
+      path: /api/todo/**
 
 user-service:
   ribbon:
