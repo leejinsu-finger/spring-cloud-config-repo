@@ -1,5 +1,3 @@
-message: Hello USER TEST Service!!!!
-
 spring:
   profiles:
     active: development
@@ -26,6 +24,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:${EUREKA_SERVER_PORT:8761}/eureka/
+
+message: Hello USER TEST Service!!!!
 
 ---
 spring:
