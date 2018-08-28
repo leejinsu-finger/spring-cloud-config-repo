@@ -25,9 +25,12 @@ zuul:
     user-service:
       path: /api/user/**
       url: http://localhost:8082
+      stripPrefix: false
     todo-service:
       path: /api/todo/**
       url: http://localhost:8081
+      stripPrefix: false
+      sensitiveHeaders:      
 
 #user-service:
 #  ribbon:
