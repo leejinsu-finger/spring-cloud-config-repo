@@ -1,4 +1,4 @@
-message: Hello USER TEST Service!!!!
+
 
 spring:
   profiles:
@@ -13,6 +13,8 @@ spring:
     username: guest
     password: guest
     
+message: Hello USER TEST Service!!!!
+
 management:
   endpoints:
     web:
