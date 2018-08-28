@@ -1,6 +1,15 @@
 spring:
   profiles:
     active: development
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  
+  endpoint:
+    health:
+      show-details: ALWAYS
 
 ---
 spring:
@@ -33,15 +42,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:${EUREKA_SERVER_PORT:8761}/eureka/   
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"  
-  endpoint:
-    health:
-      show-details: ALWAYS
-
 ---
 spring:
   profiles: docker
@@ -59,7 +59,6 @@ zuul:
     todo-service:
       serviceId: todo-service
       path: /api/todo/**
-
 
 eureka:
   client:
