@@ -1,3 +1,5 @@
+message: Hello USER TEST Service!!!!
+
 spring:
   profiles:
     active: development
