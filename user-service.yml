@@ -19,15 +19,13 @@ spring:
     port: 5672
     username: guest
     password: guest
-   
-
-message: Hello USER TEST Service!!!!
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:${EUREKA_SERVER_PORT:8761}/eureka/
 
+message: Hello USER TEST Service!!!!
 
 ---
 spring:
