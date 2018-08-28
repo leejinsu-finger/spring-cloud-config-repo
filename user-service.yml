@@ -1,3 +1,5 @@
+message: Hello USER TEST Service!!!!
+
 spring:
   profiles:
     active: development
@@ -14,11 +16,6 @@ management:
 ---
 spring:
   profiles: development
-
-
-message: Hello USER TEST Service!!!!
-
-spring:
   rabbitmq:
     host: localhost
     port: 5672
