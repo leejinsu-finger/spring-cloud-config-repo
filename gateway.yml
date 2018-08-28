@@ -20,17 +20,7 @@ spring:
     username: guest
     password: guest      
 
-zuul:
-  routes:
-    user-service:
-      path: /api/user/**
-      url: http://user-service:8082
-      stripPrefix: false
-    todo-service:
-      path: /api/todo/**
-      url: http://todo-service:8081
-      stripPrefix: false
-      sensitiveHeaders:      
+ 
 
 #user-service:
 #  ribbon:
