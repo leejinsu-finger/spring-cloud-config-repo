@@ -14,6 +14,11 @@ management:
 ---
 spring:
   profiles: development
+
+
+message: Hello USER TEST Service!!!!
+
+spring:
   rabbitmq:
     host: localhost
     port: 5672
@@ -24,8 +29,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:${EUREKA_SERVER_PORT:8761}/eureka/
-
-message: Hello USER TEST Service!!!!
 
 ---
 spring:
