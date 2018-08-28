@@ -24,8 +24,10 @@ zuul:
   routes:
     user-service:
       path: /api/user/**
+      url: http://localhost:8082
     todo-service:
       path: /api/todo/**
+      url: http://localhost:8081
 
 #user-service:
 #  ribbon:
@@ -53,8 +55,10 @@ zuul:
   routes:
     user-service:
       path: /api/user/**
+      url: http://localhost:8082
     todo-service:
       path: /api/todo/**
+      url: http://localhost:8081
 
 eureka:
   client:
