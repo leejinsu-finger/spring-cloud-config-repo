@@ -3,6 +3,15 @@ message: Hello USER TEST Service!!!!
 spring:
   profiles:
     active: development
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  
+  endpoint:
+    health:
+      show-details: ALWAYS         
 
 ---
 spring:
