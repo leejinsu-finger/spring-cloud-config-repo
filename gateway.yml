@@ -24,11 +24,11 @@ zuul:
   routes:
     user-service:
       path: /api/user/**
-      url: http://localhost:8082
+      url: http://user-service:8082
       stripPrefix: false
     todo-service:
       path: /api/todo/**
-      url: http://localhost:8081
+      url: http://todo-service:8081
       stripPrefix: false
       sensitiveHeaders:      
 
