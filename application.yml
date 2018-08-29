@@ -1,5 +1,3 @@
-message=root config
-
 logging:
   level:
     root: debug
