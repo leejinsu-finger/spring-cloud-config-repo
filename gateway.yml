@@ -15,10 +15,10 @@ zuul:
   routes:
     user-service:
       path: /api/user/**
-      url: http://localhost:8082
+      url: http://10.1.1.203:8082/
     todo-service:
       path: /api/todo/**
-      url: http://localhost:8081    
+      url: http://10.1.1.203:8081/
 
 ---
 spring:
