@@ -1,1 +1,14 @@
 message=root config
+
+---
+spring:
+  profiles: development
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  
+  endpoint:
+    health:
+      show-details: ALWAYS
