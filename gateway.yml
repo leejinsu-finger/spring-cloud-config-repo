@@ -1,15 +1,6 @@
 spring:
   profiles:
     active: development
-    
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"  
-  endpoint:
-    health:
-      show-details: ALWAYS
 
 ---
 spring:
@@ -18,18 +9,7 @@ spring:
     host: localhost
     port: 5672
     username: guest
-    password: guest      
-
- 
-
-#user-service:
-#  ribbon:
-#    listOfServers: http://localhost:8081,http://localhost:8091
-    
-#todo-service:
-#  ribbon:
-#    listOfServers: http://localhost:8082,http://localhost:8092,http://localhost:8102
- 
+    password: guest
 
 ---
 spring:
