@@ -14,3 +14,16 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+
+---
+spring:
+  profiles: vm
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  
+  endpoint:
+    health:
+      show-details: ALWAYS
