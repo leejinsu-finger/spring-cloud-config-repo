@@ -20,7 +20,7 @@ eureka:
 
 ---
 spring:
-  profiles: docker
+  profiles: vm
   rabbitmq:
     host: localhost
     port: 5672
