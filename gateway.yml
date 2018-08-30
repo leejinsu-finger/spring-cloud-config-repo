@@ -15,7 +15,7 @@ zuul:
   routes:
     user-service:
       path: /api/user/**
-      url: http://gateway:8082
+      url: http://gateway:18081
     todo-service:
       path: /api/todo/**
       url: http://gateway:8081
