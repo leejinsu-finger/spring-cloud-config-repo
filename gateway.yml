@@ -15,13 +15,13 @@ zuul:
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   routes:
     user-service:
-      path: /api/user/**
+      path: /api/**
       url: http://gateway:18081
     board-service:
-      path: /api/board/**
+      path: /api/**
       url: http://gateway:18082
     dad-service:
-      path: /api/dad/**
+      path: /api/**
       url: http://gateway:18083
     todo-service:
       path: /api/todo/**
