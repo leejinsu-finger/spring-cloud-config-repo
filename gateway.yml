@@ -16,6 +16,12 @@ zuul:
     user-service:
       path: /api/user/**
       url: http://gateway:18081
+    board-service:
+      path: /api/board/**
+      url: http://gateway:18082
+    dad-service:
+      path: /api/dad/**
+      url: http://gateway:18083
     todo-service:
       path: /api/todo/**
       url: http://gateway:8081
