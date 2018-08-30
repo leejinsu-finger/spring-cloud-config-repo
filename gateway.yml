@@ -12,6 +12,7 @@ spring:
     password: guest
     
 zuul:
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   routes:
     user-service:
       path: /api/user/**
