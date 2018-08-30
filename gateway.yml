@@ -24,7 +24,7 @@ zuul:
       url: http://gateway:18083
     todo-service:
       path: /api/todo/**
-      url: http://gateway:8081
+      url: http://172.31.31.249:8081
 
 ---
 spring:
