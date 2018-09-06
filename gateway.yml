@@ -14,6 +14,9 @@ spring:
 zuul:
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   routes:
+    auth-service:
+      path: /api/auth/**
+      url: http://gateway:18080
     user-service:
       path: /api/user/**
       url: http://gateway:18081
