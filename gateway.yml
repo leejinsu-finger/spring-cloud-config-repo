@@ -22,10 +22,8 @@ zuul:
   routes:
     auth-service:
       path: /api/auth/**
-      url: http://gateway:18080
     user-service:
       path: /api/user/**
-      url: http://gateway:18081
     board-service:
       path: /api/board/**
       url: http://gateway:18082
@@ -34,8 +32,7 @@ zuul:
       url: http://gateway:18083
     todo-service:
       path: /api/todo/**
-      url: http://172.31.31.249:8081
-
+      
 ---
 spring:
   profiles: vm
